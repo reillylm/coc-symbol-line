@@ -142,6 +142,8 @@ class DocumentSymbolLine implements Disposable {
 
       await buffer.setVar('coc_symbol_line_plain', plainLine);
       await buffer.setVar('coc_symbol_line_full_plain', plainFullLine); // useless
+
+      workspace.nvim.callTimer('coc#util#do_autocmd', ['CocStatusChange'], true);
     } catch (e) {}
   }
 
