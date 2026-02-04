@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noEmit": true,
     "target": "es2017",
     "lib": ["es2017", "es2018"],
     "module": "commonjs",
@@ -9,7 +10,9 @@
     "strict": true,
     "moduleResolution": "node",
     "noImplicitAny": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true
   },
   "include": ["src"]
 }

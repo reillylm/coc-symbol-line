@@ -1,17 +1,20 @@
 import {
   CancellationTokenSource,
   commands,
-  Disposable,
-  DocumentSymbol,
+  type Disposable,
+  type DocumentSymbol,
   events,
-  ExtensionContext,
+  type ExtensionContext,
   languages,
   window,
   workspace,
 } from 'coc.nvim';
 import { config } from './config';
 import { positionInRange } from './util/pos';
-import { convertSymbols, SymbolInfo } from './util/symbol';
+import {
+  convertSymbols,
+  type SymbolInfo,
+} from './util/symbol';
 import { registerRuntimepath } from './util/vim';
 
 class DocumentSymbolLine implements Disposable {
