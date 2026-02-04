@@ -5,6 +5,7 @@
   "author": "wongxy <xiyao.wong@foxmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
+  "type": "module",
   "keywords": [
     "coc.nvim"
   ],
@@ -24,7 +25,7 @@
     "semi": true
   },
   "devDependencies": {
-    "@types/node": "^16.18.0",
+    "@types/node": "^25.2.0",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "coc.nvim": "^0.0.83-next.18",
